@@ -6,7 +6,7 @@ pipeline{
         stage('example'){
             steps{
                 echo 'Hello world'
-                sh 'docker build --tag=hello'
+                docker.build('hello')
             }
         }
     }
