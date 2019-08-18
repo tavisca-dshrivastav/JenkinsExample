@@ -4,7 +4,7 @@ pipeline{
     }
     stages{
         stage('example'){
-            steps{
+            script{
                 echo 'Hello world'
                 docker.build('hello')
             }
